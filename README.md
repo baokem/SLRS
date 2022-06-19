@@ -1,2 +1,2 @@
 # SLRS
-SLRS is a scaffolding method using stLFR reads.
+SLRS is a scaffolding method for stLFR reads.
