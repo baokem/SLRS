@@ -13,7 +13,8 @@ $(TARGET):$(OBJS)
 	$(CC) $(CPPFLAGS) -c $< -o $@ $(INC) -I $(BAMTOOLS_HOME_INCLUDE)/ -lz 
     
 all: SLRS
-
+	rm -f *.o
+	
 .PHONY: clean
 
 clean:
