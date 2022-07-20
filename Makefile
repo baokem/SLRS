@@ -10,7 +10,7 @@ $(TARGET):$(OBJS)
 	$(CC) -o $@ $^ ./lib/lp/liblpsolve55.a -I $(BAMTOOLS_HOME_INCLUDE)/ $(BAMTOOLS_HOME_LIB)/libbamtools.a -lm -ldl -lz
 
 %.o: %.cpp
-	$(CC) $(CPPFLAGS) -c $< -o $@ $(INC)-I $(BAMTOOLS_HOME_INCLUDE)/ -lz 
+	$(CC) $(CPPFLAGS) -c $< -o $@ $(INC) -I $(BAMTOOLS_HOME_INCLUDE)/ -lz 
     
 all: SLRS
 	rm -f *.o
