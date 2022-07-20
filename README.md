@@ -45,6 +45,7 @@ SLRS is a scaffolding method based on synthetic long reads. It utilizes co-barco
 ```
 
 # stLFR reads convert to 10X format
+### step 1
 ```
 awk '{if((NR)%4==1){split($1,a,"/");d="BX:Z:"; c=a[1]; split(c,b,"#");if(b[2] == "0_0_0"){print b[1]; }else{printf("%s %s%s\n",b[1],d,b[2]);}} else { print $0 } }'  stlfr_read.1.fastq > 10X.1.fastq
 awk '{if((NR)%4==1){split($1,a,"/");d="BX:Z:"; c=a[1]; split(c,b,"#");if(b[2] == "0_0_0"){print b[1]; }else{printf("%s %s%s\n",b[1],d,b[2]);}} else { print $0 } }'  stlfr_read.2.fastq > 10X.2.fastq
