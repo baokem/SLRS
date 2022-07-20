@@ -52,5 +52,10 @@ awk '{if((NR)%4==1){split($1,a,"/");d="BX:Z:"; c=a[1]; split(c,b,"#");if(b[2] ==
 ```
 ### step 2
 ```
-./merge.pl 10X.1.fastq 10X.2.fastq | gzip -c >barcoded.fastq.gz
+SLRS/utils/merge.pl 10X.1.fastq 10X.2.fastq | gzip -c >barcoded.fq.gz
+```
+
+# 10X linked reads convert to stLFR format
+```
+gzip -dc barcoded.fq.gz | awk  'BEGIN{id=2;}{if((NR)%4==1) {if(id==1){id=2;}else{id=1;};if(NF>1){bc=$2;}else{bc="0_0_0";} printf("%s#%s/%d\n",$1,bc,id) >> "stlfr_read."id".fastq"} else {printf("%s\n",$1)>>"stlfr_read."id".fastq"}  }'
 ```
