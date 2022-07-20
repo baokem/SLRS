@@ -13,8 +13,8 @@ SLRS is a scaffolding method based on synthetic long reads. It utilizes co-barco
     SLRS should run on Linux operating sysetm with gcc. We test SLHSD using gcc9.4.0 on Ubuntu.
         git clone https://github.com/baokem/SLRS.git
 	cd SLHSD
-	export BAMTOOLS_HOME_INCLUDE=~/bamtools/build/usr/local/include/bamtools/
-	export BAMTOOLS_HOME_LIB=~/bamtools/build/usr/local/lib/
+	export BAMTOOLS_HOME_INCLUDE=~/bamtools/build/usr/local/include/bamtools
+	export BAMTOOLS_HOME_LIB=~/bamtools/build/usr/local/lib
 	make all
 ```
 ### 3.Running
