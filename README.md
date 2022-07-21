@@ -31,12 +31,12 @@ SLRS is a scaffolding method based on synthetic long reads. It utilizes co-barco
     -r R2-reads-bamfile: R2 reads aligned to contigs
     -a alignmentResultFile: Collected alignment information files
     -o result-file: Result file
-    -t contigLengthThreshold: Contigs with length less than this parameter are ignored (default 2000)\n
-    -e endlength: Contig head/tail length for collecting aligned reads (default 30000)\n
-    -m readsnum:The coefficient of variation is calculated when the number of reads exceeds this parameter (default 7)\n
-    -n readsnumperbarcode: The number of reads each barcode has (default 7)\n
-    -f endreadsnum: The number of reads aligned to contig end (default 3)\n
-    -s sortbarcode: Sort barcodes\n
+    -t contigLengthThreshold: Contigs with length less than this parameter are ignored (default 2000)
+    -e endlength: Contig head/tail length for collecting aligned reads (default 30000)
+    -m readsnum:The coefficient of variation is calculated when the number of reads exceeds this parameter (default 7)
+    -n readsnumperbarcode: The number of reads each barcode has (default 7)
+    -f endreadsnum: The number of reads aligned to contig end (default 3)
+    -s sortbarcode: Sort barcodes
     
 ```
 ### 4.Output
