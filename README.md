@@ -26,6 +26,7 @@ SLRS is a scaffolding method based on synthetic long reads. It utilizes co-barco
     step 5: samtools view -Sb align2.sam > align2.bam
     step 6: ./SLRS -c contigs.fasta -l align1.bam -r align2.bam -o resultOutPutDirectory [other options] 
     
+    -h -help
     -c contig-file: Input file with fasta format
     -l R1-reads-bamfile: R1 reads aligned to contigs
     -r R2-reads-bamfile: R2 reads aligned to contigs
